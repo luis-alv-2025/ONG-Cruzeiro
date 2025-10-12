@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados básicos da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se na ONG VerdeVida - Seja um voluntário, doador ou apoiador da causa ambiental. Faça parte da transformação!">
+    <meta name="keywords" content="cadastro, voluntário, doador, ONG, meio ambiente, sustentabilidade">
+    <meta name="author" content="ONG VerdeVida">
+    <title>Cadastro - ONG VerdeVida</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__brand">
+                    <img src="images/logo.png" alt="ONG VerdeVida" class="nav__logo">
+                    <h1 class="nav__title">VerdeVida</h1>
+                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="projetos.html" class="nav__link">Projetos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cadastro.html" class="nav__link nav__link--active">Cadastro</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contato" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+                <button class="nav__toggle" aria-label="Abrir menu">
+                    <span class="nav__hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Cadastre-se</h1>
+                <p class="page-header__subtitle">
+                    Faça parte da nossa comunidade e ajude a transformar o mundo através da sustentabilidade
+                </p>
+            </div>
+        </section>
+
+        <!-- Abas de seleção de tipo de cadastro -->
+        <section class="registration-tabs">
+            <div class="container">
+                <div class="tab-navigation">
+                    <button class="tab-btn tab-btn--active" data-tab="volunteer">Voluntário</button>
+                    <button class="tab-btn" data-tab="donor">Doador</button>
+                    <button class="tab-btn" data-tab="supporter">Apoiador</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Cadastro de Voluntário -->
+        <section class="registration-form" id="volunteer-form">
+            <div class="container">
+                <div class="form-container">
+                    <header class="form-header">
+                        <h2 class="form-title">Cadastro de Voluntário</h2>
+                        <p class="form-subtitle">
+                            Preencha os dados abaixo para se tornar um voluntário da ONG VerdeVida
+                        </p>
+                    </header>
+
+                    <!-- Formulário principal de cadastro -->
+                    <form class="form" id="volunteerRegistrationForm" novalidate>
+                        <!-- Seção de Informações Pessoais -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações Pessoais</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerFullName" class="form-label">
+                                        Nome Completo <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerFullName" 
+                                        name="fullName" 
+                                        class="form-input" 
+                                        placeholder="Digite seu nome completo"
+                                        required
+                                        autocomplete="name"
+                                    >
+                                    <span class="form-error" id="volunteerFullName-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerEmail" class="form-label">
+                                        E-mail <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="volunteerEmail" 
+                                        name="email" 
+                                        class="form-input" 
+                                        placeholder="seu@email.com"
+                                        required
+                                        autocomplete="email"
+                                    >
+                                    <span class="form-error" id="volunteerEmail-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerCPF" class="form-label">
+                                        CPF <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerCPF" 
+                                        name="cpf" 
+                                        class="form-input" 
+                                        placeholder="000.000.000-00"
+                                        maxlength="14"
+                                        required
+                                        autocomplete="off"
+                                    >
+                                    <span class="form-error" id="volunteerCPF-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerPhone" class="form-label">
+                                        Telefone <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="volunteerPhone" 
+                                        name="phone" 
+                                        class="form-input" 
+                                        placeholder="(11) 99999-9999"
+                                        maxlength="15"
+                                        required
+                                        autocomplete="tel"
+                                    >
+                                    <span class="form-error" id="volunteerPhone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerBirthDate" class="form-label">
+                                        Data de Nascimento <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        id="volunteerBirthDate" 
+                                        name="birthDate" 
+                                        class="form-input"
+                                        required
+                                        autocomplete="bday"
+                                    >
+                                    <span class="form-error" id="volunteerBirthDate-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerGender" class="form-label">Gênero</label>
+                                    <select id="volunteerGender" name="gender" class="form-select">
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                        <option value="outro">Outro</option>
+                                        <option value="nao-informar">Prefiro não informar</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Address Information -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações de Endereço</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerCEP" class="form-label">
+                                        CEP <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerCEP" 
+                                        name="cep" 
+                                        class="form-input" 
+                                        placeholder="00000-000"
+                                        maxlength="9"
+                                        required
+                                        autocomplete="postal-code"
+                                    >
+                                    <span class="form-error" id="volunteerCEP-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerCity" class="form-label">
+                                        Cidade <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerCity" 
+                                        name="city" 
+                                        class="form-input" 
+                                        placeholder="Digite sua cidade"
+                                        required
+                                        autocomplete="address-level2"
+                                    >
+                                    <span class="form-error" id="volunteerCity-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerState" class="form-label">
+                                        Estado <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="volunteerState" name="state" class="form-select" required>
+                                        <option value="">Selecione seu estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                    <span class="form-error" id="volunteerState-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerAddress" class="form-label">
+                                        Endereço <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerAddress" 
+                                        name="address" 
+                                        class="form-input" 
+                                        placeholder="Rua, número, bairro"
+                                        required
+                                        autocomplete="street-address"
+                                    >
+                                    <span class="form-error" id="volunteerAddress-error"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Seção de Informações Específicas do Voluntário -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações de Voluntariado</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Áreas de Interesse <span class="form-label__required">*</span>
+                                </label>
+                                <div class="checkbox-group">
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="interests" value="reflorestamento">
+                                        <span class="form-checkbox__label">Reflorestamento e Plantio</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="interests" value="educacao">
+                                        <span class="form-checkbox__label">Educação Ambiental</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="interests" value="monitoramento">
+                                        <span class="form-checkbox__label">Monitoramento Ambiental</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="interests" value="administrativo">
+                                        <span class="form-checkbox__label">Apoio Administrativo</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="interests" value="comunicacao">
+                                        <span class="form-checkbox__label">Comunicação e Marketing</span>
+                                    </label>
+                                </div>
+                                <span class="form-error" id="volunteerInterests-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerAvailability" class="form-label">
+                                        Disponibilidade <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="volunteerAvailability" name="availability" class="form-select" required>
+                                        <option value="">Selecione sua disponibilidade</option>
+                                        <option value="manha">Manhã (8h às 12h)</option>
+                                        <option value="tarde">Tarde (13h às 17h)</option>
+                                        <option value="noite">Noite (18h às 22h)</option>
+                                        <option value="fim-semana">Fim de semana</option>
+                                        <option value="flexivel">Flexível</option>
+                                    </select>
+                                    <span class="form-error" id="volunteerAvailability-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerFrequency" class="form-label">
+                                        Frequência <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="volunteerFrequency" name="frequency" class="form-select" required>
+                                        <option value="">Com que frequência pode ajudar?</option>
+                                        <option value="diario">Diariamente</option>
+                                        <option value="semanal">Semanalmente</option>
+                                        <option value="quinzenal">Quinzenalmente</option>
+                                        <option value="mensal">Mensalmente</option>
+                                        <option value="esporadico">Esporadicamente</option>
+                                    </select>
+                                    <span class="form-error" id="volunteerFrequency-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volunteerExperience" class="form-label">Experiência Anterior</label>
+                                <textarea 
+                                    id="volunteerExperience" 
+                                    name="experience" 
+                                    class="form-textarea" 
+                                    placeholder="Conte-nos sobre sua experiência com voluntariado ou projetos ambientais (opcional)"
+                                    rows="4"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volunteerSkills" class="form-label">Habilidades Específicas</label>
+                                <textarea 
+                                    id="volunteerSkills" 
+                                    name="skills" 
+                                    class="form-textarea" 
+                                    placeholder="Mencione habilidades que podem ser úteis (ex: fotografia, design, conhecimento em botânica, etc.)"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- Seção de Contato de Emergência -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Contato de Emergência</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerEmergencyName" class="form-label">
+                                        Nome do Contato <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="volunteerEmergencyName" 
+                                        name="emergencyName" 
+                                        class="form-input" 
+                                        placeholder="Nome completo do contato de emergência"
+                                        required
+                                    >
+                                    <span class="form-error" id="volunteerEmergencyName-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="volunteerEmergencyPhone" class="form-label">
+                                        Telefone do Contato <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="volunteerEmergencyPhone" 
+                                        name="emergencyPhone" 
+                                        class="form-input" 
+                                        placeholder="(11) 99999-9999"
+                                        maxlength="15"
+                                        required
+                                    >
+                                    <span class="form-error" id="volunteerEmergencyPhone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="volunteerEmergencyRelation" class="form-label">
+                                    Relacionamento <span class="form-label__required">*</span>
+                                </label>
+                                <select id="volunteerEmergencyRelation" name="emergencyRelation" class="form-select" required>
+                                    <option value="">Selecione o relacionamento</option>
+                                    <option value="pai">Pai</option>
+                                    <option value="mae">Mãe</option>
+                                    <option value="irmao">Irmão/Irmã</option>
+                                    <option value="conjuge">Cônjuge</option>
+                                    <option value="filho">Filho/Filha</option>
+                                    <option value="amigo">Amigo/Amiga</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                                <span class="form-error" id="volunteerEmergencyRelation-error"></span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Terms and Conditions -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Termos e Condições</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-checkbox form-checkbox--required">
+                                    <input type="checkbox" name="terms" value="1" required>
+                                    <span class="form-checkbox__label">
+                                        Li e aceito os <a href="#" class="form-link">Termos de Uso</a> e 
+                                        <a href="#" class="form-link">Política de Privacidade</a> 
+                                        <span class="form-label__required">*</span>
+                                    </span>
+                                </label>
+                                <span class="form-error" id="volunteerTerms-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="newsletter" value="1">
+                                    <span class="form-checkbox__label">
+                                        Desejo receber informações sobre projetos e oportunidades de voluntariado por e-mail
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="photoAuthorization" value="1">
+                                    <span class="form-checkbox__label">
+                                        Autorizo o uso de minha imagem em fotos e vídeos das atividades (opcional)
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Botões de ação do formulário -->
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--secondary" onclick="clearForm('volunteerRegistrationForm')">
+                                Limpar Formulário
+                            </button>
+                            <button type="submit" class="btn btn--primary">
+                                Enviar Cadastro
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donor Registration Form -->
+        <section class="registration-form hidden" id="donor-form">
+            <div class="container">
+                <div class="form-container">
+                    <header class="form-header">
+                        <h2 class="form-title">Cadastro de Doador</h2>
+                        <p class="form-subtitle">
+                            Preencha os dados abaixo para se tornar um doador da ONG VerdeVida
+                        </p>
+                    </header>
+
+                    <form class="form" id="donorRegistrationForm" novalidate>
+                        <!-- Personal Information -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações Pessoais</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorFullName" class="form-label">
+                                        Nome Completo <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="donorFullName" 
+                                        name="fullName" 
+                                        class="form-input" 
+                                        placeholder="Digite seu nome completo"
+                                        required
+                                        autocomplete="name"
+                                    >
+                                    <span class="form-error" id="donorFullName-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorEmail" class="form-label">
+                                        E-mail <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="donorEmail" 
+                                        name="email" 
+                                        class="form-input" 
+                                        placeholder="seu@email.com"
+                                        required
+                                        autocomplete="email"
+                                    >
+                                    <span class="form-error" id="donorEmail-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorCPF" class="form-label">
+                                        CPF <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="donorCPF" 
+                                        name="cpf" 
+                                        class="form-input" 
+                                        placeholder="000.000.000-00"
+                                        maxlength="14"
+                                        required
+                                        autocomplete="off"
+                                    >
+                                    <span class="form-error" id="donorCPF-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorPhone" class="form-label">
+                                        Telefone <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="donorPhone" 
+                                        name="phone" 
+                                        class="form-input" 
+                                        placeholder="(11) 99999-9999"
+                                        maxlength="15"
+                                        required
+                                        autocomplete="tel"
+                                    >
+                                    <span class="form-error" id="donorPhone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorBirthDate" class="form-label">
+                                        Data de Nascimento <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        id="donorBirthDate" 
+                                        name="birthDate" 
+                                        class="form-input"
+                                        required
+                                        autocomplete="bday"
+                                    >
+                                    <span class="form-error" id="donorBirthDate-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorDocumentType" class="form-label">
+                                        Tipo de Pessoa <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="donorDocumentType" name="documentType" class="form-select" required>
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="fisica">Pessoa Física</option>
+                                        <option value="juridica">Pessoa Jurídica</option>
+                                    </select>
+                                    <span class="form-error" id="donorDocumentType-error"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Address Information -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações de Endereço</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorCEP" class="form-label">
+                                        CEP <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="donorCEP" 
+                                        name="cep" 
+                                        class="form-input" 
+                                        placeholder="00000-000"
+                                        maxlength="9"
+                                        required
+                                        autocomplete="postal-code"
+                                    >
+                                    <span class="form-error" id="donorCEP-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorCity" class="form-label">
+                                        Cidade <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="donorCity" 
+                                        name="city" 
+                                        class="form-input" 
+                                        placeholder="Digite sua cidade"
+                                        required
+                                        autocomplete="address-level2"
+                                    >
+                                    <span class="form-error" id="donorCity-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorState" class="form-label">
+                                        Estado <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="donorState" name="state" class="form-select" required>
+                                        <option value="">Selecione seu estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                    <span class="form-error" id="donorState-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorAddress" class="form-label">
+                                        Endereço <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="donorAddress" 
+                                        name="address" 
+                                        class="form-input" 
+                                        placeholder="Rua, número, bairro"
+                                        required
+                                        autocomplete="street-address"
+                                    >
+                                    <span class="form-error" id="donorAddress-error"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Donation Preferences -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Preferências de Doação</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Projetos de Interesse <span class="form-label__required">*</span>
+                                </label>
+                                <div class="checkbox-group">
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="donationProjects" value="adote-arvore">
+                                        <span class="form-checkbox__label">Adote uma Árvore</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="donationProjects" value="compensacao-carbono">
+                                        <span class="form-checkbox__label">Compensação de Carbono</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="donationProjects" value="educacao-ambiental">
+                                        <span class="form-checkbox__label">Educação Ambiental</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="donationProjects" value="geral">
+                                        <span class="form-checkbox__label">Doação Geral</span>
+                                    </label>
+                                </div>
+                                <span class="form-error" id="donorProjects-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="donorFrequency" class="form-label">
+                                        Frequência de Doação <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="donorFrequency" name="frequency" class="form-select" required>
+                                        <option value="">Selecione a frequência</option>
+                                        <option value="unica">Doação Única</option>
+                                        <option value="mensal">Mensal</option>
+                                        <option value="trimestral">Trimestral</option>
+                                        <option value="semestral">Semestral</option>
+                                        <option value="anual">Anual</option>
+                                    </select>
+                                    <span class="form-error" id="donorFrequency-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="donorAmount" class="form-label">
+                                        Valor Sugerido (R$)
+                                    </label>
+                                    <select id="donorAmount" name="amount" class="form-select">
+                                        <option value="">Selecione um valor</option>
+                                        <option value="25">R$ 25,00</option>
+                                        <option value="50">R$ 50,00</option>
+                                        <option value="100">R$ 100,00</option>
+                                        <option value="200">R$ 200,00</option>
+                                        <option value="500">R$ 500,00</option>
+                                        <option value="custom">Valor personalizado</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="donorCustomAmount" class="form-label">Valor Personalizado (R$)</label>
+                                <input 
+                                    type="number" 
+                                    id="donorCustomAmount" 
+                                    name="customAmount" 
+                                    class="form-input" 
+                                    placeholder="Digite o valor desejado"
+                                    min="1"
+                                    step="0.01"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Forma de Pagamento Preferida <span class="form-label__required">*</span>
+                                </label>
+                                <div class="radio-group">
+                                    <label class="form-radio">
+                                        <input type="radio" name="paymentMethod" value="pix" required>
+                                        <span class="form-radio__label">PIX</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="paymentMethod" value="cartao-credito" required>
+                                        <span class="form-radio__label">Cartão de Crédito</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="paymentMethod" value="boleto" required>
+                                        <span class="form-radio__label">Boleto Bancário</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="paymentMethod" value="transferencia" required>
+                                        <span class="form-radio__label">Transferência Bancária</span>
+                                    </label>
+                                </div>
+                                <span class="form-error" id="donorPaymentMethod-error"></span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Terms and Conditions -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Termos e Condições</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-checkbox form-checkbox--required">
+                                    <input type="checkbox" name="terms" value="1" required>
+                                    <span class="form-checkbox__label">
+                                        Li e aceito os <a href="#" class="form-link">Termos de Uso</a> e 
+                                        <a href="#" class="form-link">Política de Privacidade</a> 
+                                        <span class="form-label__required">*</span>
+                                    </span>
+                                </label>
+                                <span class="form-error" id="donorTerms-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="newsletter" value="1">
+                                    <span class="form-checkbox__label">
+                                        Desejo receber relatórios de impacto e atualizações dos projetos por e-mail
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="anonymous" value="1">
+                                    <span class="form-checkbox__label">
+                                        Prefiro que minha doação seja anônima
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--secondary" onclick="clearForm('donorRegistrationForm')">
+                                Limpar Formulário
+                            </button>
+                            <button type="submit" class="btn btn--primary">
+                                Enviar Cadastro
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supporter Registration Form -->
+        <section class="registration-form hidden" id="supporter-form">
+            <div class="container">
+                <div class="form-container">
+                    <header class="form-header">
+                        <h2 class="form-title">Cadastro de Apoiador</h2>
+                        <p class="form-subtitle">
+                            Preencha os dados abaixo para se tornar um apoiador da ONG VerdeVida
+                        </p>
+                    </header>
+
+                    <form class="form" id="supporterRegistrationForm" novalidate>
+                        <!-- Personal Information -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações Pessoais</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="supporterFullName" class="form-label">
+                                        Nome Completo <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterFullName" 
+                                        name="fullName" 
+                                        class="form-input" 
+                                        placeholder="Digite seu nome completo"
+                                        required
+                                        autocomplete="name"
+                                    >
+                                    <span class="form-error" id="supporterFullName-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="supporterEmail" class="form-label">
+                                        E-mail <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="supporterEmail" 
+                                        name="email" 
+                                        class="form-input" 
+                                        placeholder="seu@email.com"
+                                        required
+                                        autocomplete="email"
+                                    >
+                                    <span class="form-error" id="supporterEmail-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="supporterCPF" class="form-label">
+                                        CPF <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterCPF" 
+                                        name="cpf" 
+                                        class="form-input" 
+                                        placeholder="000.000.000-00"
+                                        maxlength="14"
+                                        required
+                                        autocomplete="off"
+                                    >
+                                    <span class="form-error" id="supporterCPF-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="supporterPhone" class="form-label">
+                                        Telefone <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        id="supporterPhone" 
+                                        name="phone" 
+                                        class="form-input" 
+                                        placeholder="(11) 99999-9999"
+                                        maxlength="15"
+                                        required
+                                        autocomplete="tel"
+                                    >
+                                    <span class="form-error" id="supporterPhone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="supporterBirthDate" class="form-label">
+                                        Data de Nascimento <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="date" 
+                                        id="supporterBirthDate" 
+                                        name="birthDate" 
+                                        class="form-input"
+                                        required
+                                        autocomplete="bday"
+                                    >
+                                    <span class="form-error" id="supporterBirthDate-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="supporterOccupation" class="form-label">Profissão/Ocupação</label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterOccupation" 
+                                        name="occupation" 
+                                        class="form-input" 
+                                        placeholder="Sua profissão ou ocupação"
+                                    >
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Address Information -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Informações de Endereço</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="supporterCEP" class="form-label">
+                                        CEP <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterCEP" 
+                                        name="cep" 
+                                        class="form-input" 
+                                        placeholder="00000-000"
+                                        maxlength="9"
+                                        required
+                                        autocomplete="postal-code"
+                                    >
+                                    <span class="form-error" id="supporterCEP-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="supporterCity" class="form-label">
+                                        Cidade <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterCity" 
+                                        name="city" 
+                                        class="form-input" 
+                                        placeholder="Digite sua cidade"
+                                        required
+                                        autocomplete="address-level2"
+                                    >
+                                    <span class="form-error" id="supporterCity-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group form-group--half">
+                                    <label for="supporterState" class="form-label">
+                                        Estado <span class="form-label__required">*</span>
+                                    </label>
+                                    <select id="supporterState" name="state" class="form-select" required>
+                                        <option value="">Selecione seu estado</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                    <span class="form-error" id="supporterState-error"></span>
+                                </div>
+                                
+                                <div class="form-group form-group--half">
+                                    <label for="supporterAddress" class="form-label">
+                                        Endereço <span class="form-label__required">*</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="supporterAddress" 
+                                        name="address" 
+                                        class="form-input" 
+                                        placeholder="Rua, número, bairro"
+                                        required
+                                        autocomplete="street-address"
+                                    >
+                                    <span class="form-error" id="supporterAddress-error"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Support Preferences -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Formas de Apoio</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Como deseja apoiar nossa causa? <span class="form-label__required">*</span>
+                                </label>
+                                <div class="checkbox-group">
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="supportWays" value="compartilhamento">
+                                        <span class="form-checkbox__label">Compartilhamento nas redes sociais</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="supportWays" value="doacao-esporadica">
+                                        <span class="form-checkbox__label">Doações esporádicas</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="supportWays" value="voluntariado-esporadico">
+                                        <span class="form-checkbox__label">Voluntariado esporádico</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="supportWays" value="parcerias">
+                                        <span class="form-checkbox__label">Parcerias e colaborações</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" name="supportWays" value="eventos">
+                                        <span class="form-checkbox__label">Participação em eventos</span>
+                                    </label>
+                                </div>
+                                <span class="form-error" id="supporterWays-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="supporterMotivation" class="form-label">
+                                    O que te motiva a apoiar nossa causa? <span class="form-label__required">*</span>
+                                </label>
+                                <textarea 
+                                    id="supporterMotivation" 
+                                    name="motivation" 
+                                    class="form-textarea" 
+                                    placeholder="Conte-nos o que te inspira a apoiar a causa ambiental"
+                                    rows="4"
+                                    required
+                                ></textarea>
+                                <span class="form-error" id="supporterMotivation-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="supporterSkills" class="form-label">Habilidades que pode oferecer</label>
+                                <textarea 
+                                    id="supporterSkills" 
+                                    name="skills" 
+                                    class="form-textarea" 
+                                    placeholder="Mencione habilidades profissionais ou pessoais que podem contribuir com nossos projetos"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- Terms and Conditions -->
+                        <fieldset class="form-section">
+                            <legend class="form-section__title">Termos e Condições</legend>
+                            
+                            <div class="form-group">
+                                <label class="form-checkbox form-checkbox--required">
+                                    <input type="checkbox" name="terms" value="1" required>
+                                    <span class="form-checkbox__label">
+                                        Li e aceito os <a href="#" class="form-link">Termos de Uso</a> e 
+                                        <a href="#" class="form-link">Política de Privacidade</a> 
+                                        <span class="form-label__required">*</span>
+                                    </span>
+                                </label>
+                                <span class="form-error" id="supporterTerms-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="newsletter" value="1">
+                                    <span class="form-checkbox__label">
+                                        Desejo receber informações sobre nossos projetos e oportunidades de apoio
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="photoAuthorization" value="1">
+                                    <span class="form-checkbox__label">
+                                        Autorizo o uso de minha imagem em materiais de divulgação (opcional)
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--secondary" onclick="clearForm('supporterRegistrationForm')">
+                                Limpar Formulário
+                            </button>
+                            <button type="submit" class="btn btn--primary">
+                                Enviar Cadastro
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">ONG VerdeVida</h3>
+                    <p class="footer__description">
+                        Transformando vidas através da proteção ambiental e reflorestamento sustentável.
+                    </p>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Contato</h4>
+                    <address class="footer__address">
+                        <p>Rua das Flores, 123<br>
+                        Centro - São Paulo/SP<br>
+                        CEP: 01234-567</p>
+                        <p>Telefone: (11) 9999-9999</p>
+                        <p>Email: contato@verdevida.org.br</p>
+                    </address>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Links Úteis</h4>
+                    <ul class="footer__links">
+                        <li><a href="projetos.html" class="footer__link">Nossos Projetos</a></li>
+                        <li><a href="cadastro.html" class="footer__link">Seja Voluntário</a></li>
+                        <li><a href="#" class="footer__link">Relatórios</a></li>
+                        <li><a href="#" class="footer__link">Transparência</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 ONG VerdeVida. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
