@@ -10,38 +10,36 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <i class="fas fa-leaf"></i>
-                <h1>ONG Cuidemos do Amazonas</h1>
+            <div>
+                <h1>Cuidemos do Amazonas</h1>
             </div>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html" class="active">Cadastro</a></li>
+                <li><a href="/pages/projetos.html">Projetos</a></li>
+                <li><a href="/pages/cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
+        <section>
+            <div>
                 <h1>Cadastro de Voluntário da Conservação</h1>
                 <p>Junte-se à nossa equipe e ajude a proteger a biodiversidade amazônica</p>
             </div>
         </section>
 
-        <section class="registration-form">
-            <div class="container">
-                <div class="form-container">
+        <section>
+            <div>
+                <div>
                     <form id="volunteerForm" novalidate>
                         <!-- Dados Pessoais -->
-                        <fieldset class="form-section">
+                        <fieldset>
                             <legend>
-                                <i class="fas fa-user"></i>
                                 Dados Pessoais
                             </legend>
                             
-                            <div class="form-group">
+                            <div>
                                 <label for="nomeCompleto">Nome Completo *</label>
                                 <input 
                                     type="text" 
@@ -54,11 +52,11 @@
                                     title="Digite apenas letras e espaços"
                                     placeholder="Digite seu nome completo"
                                 >
-                                <span class="error-message"></span>
+                                <span></span>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
+                            <div>
+                                <div>
                                     <label for="email">E-mail *</label>
                                     <input 
                                         type="email" 
@@ -67,10 +65,9 @@
                                         required
                                         placeholder="seu@email.com"
                                     >
-                                    <span class="error-message"></span>
                                 </div>
 
-                                <div class="form-group">
+                                <div>
                                     <label for="telefone">Telefone *</label>
                                     <input 
                                         type="tel" 
@@ -81,12 +78,11 @@
                                         title="Formato: (11) 99999-9999"
                                         placeholder="(11) 99999-9999"
                                     >
-                                    <span class="error-message"></span>
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
+                            <div>
+                                <div>
                                     <label for="cpf">CPF *</label>
                                     <input 
                                         type="text" 
@@ -97,10 +93,9 @@
                                         title="Formato: 000.000.000-00"
                                         placeholder="000.000.000-00"
                                     >
-                                    <span class="error-message"></span>
                                 </div>
 
-                                <div class="form-group">
+                                <div>
                                     <label for="dataNascimento">Data de Nascimento *</label>
                                     <input 
                                         type="date" 
@@ -110,19 +105,17 @@
                                         max="2010-01-01"
                                         min="1920-01-01"
                                     >
-                                    <span class="error-message"></span>
                                 </div>
                             </div>
                         </fieldset>
 
                         <!-- Endereço -->
-                        <fieldset class="form-section">
+                        <fieldset>
                             <legend>
-                                <i class="fas fa-map-marker-alt"></i>
                                 Endereço
                             </legend>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="cep">CEP *</label>
                                 <input 
                                     type="text" 
@@ -133,10 +126,9 @@
                                     title="Formato: 00000-000"
                                     placeholder="00000-000"
                                 >
-                                <span class="error-message"></span>
                             </div>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="endereco">Endereço *</label>
                                 <input 
                                     type="text" 
@@ -147,11 +139,10 @@
                                     maxlength="200"
                                     placeholder="Rua, Avenida, Número"
                                 >
-                                <span class="error-message"></span>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
+                            <div>
+                                <div>
                                     <label for="cidade">Cidade *</label>
                                     <input 
                                         type="text" 
@@ -164,10 +155,9 @@
                                         title="Digite apenas letras e espaços"
                                         placeholder="Sua cidade"
                                     >
-                                    <span class="error-message"></span>
                                 </div>
 
-                                <div class="form-group">
+                                <div>
                                     <label for="estado">Estado *</label>
                                     <select id="estado" name="estado" required>
                                         <option value="">Selecione seu estado</option>
@@ -199,19 +189,17 @@
                                         <option value="SE">Sergipe</option>
                                         <option value="TO">Tocantins</option>
                                     </select>
-                                    <span class="error-message"></span>
-                                </div>
+                               </div>
                             </div>
                         </fieldset>
 
                         <!-- Informações de Voluntariado -->
-                        <fieldset class="form-section">
+                        <fieldset>
                             <legend>
-                                <i class="fas fa-hands-helping"></i>
                                 Informações de Voluntariado
                             </legend>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="areaInteresse">Área de Interesse *</label>
                                 <select id="areaInteresse" name="areaInteresse" required>
                                     <option value="">Selecione uma área</option>
@@ -222,37 +210,32 @@
                                     <option value="documentacao">Documentação</option>
                                     <option value="administrativo">Administrativo</option>
                                 </select>
-                                <span class="error-message"></span>
                             </div>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="disponibilidade">Disponibilidade de Horários *</label>
-                                <div class="checkbox-group">
-                                    <label class="checkbox-label">
+                                <div>
+                                    <label>
                                         <input type="checkbox" name="disponibilidade" value="manha">
-                                        <span class="checkmark"></span>
                                         Manhã (8h às 12h)
                                     </label>
-                                    <label class="checkbox-label">
+                                    <label>
                                         <input type="checkbox" name="disponibilidade" value="tarde">
-                                        <span class="checkmark"></span>
                                         Tarde (13h às 17h)
                                     </label>
-                                    <label class="checkbox-label">
+                                    <label>
                                         <input type="checkbox" name="disponibilidade" value="noite">
-                                        <span class="checkmark"></span>
                                         Noite (18h às 22h)
                                     </label>
-                                    <label class="checkbox-label">
+                                    <label>
                                         <input type="checkbox" name="disponibilidade" value="fim-semana">
-                                        <span class="checkmark"></span>
                                         Fim de Semana
                                     </label>
                                 </div>
-                                <span class="error-message"></span>
+
                             </div>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="experiencia">Experiência Anterior em Conservação</label>
                                 <textarea 
                                     id="experiencia" 
@@ -261,10 +244,9 @@
                                     maxlength="500"
                                     placeholder="Conte-nos sobre sua experiência anterior em conservação ambiental ou trabalhos voluntários (opcional)"
                                 ></textarea>
-                                <span class="error-message"></span>
                             </div>
 
-                            <div class="form-group">
+                            <div>
                                 <label for="motivacao">Por que deseja ser voluntário da conservação? *</label>
                                 <textarea 
                                     id="motivacao" 
@@ -275,75 +257,63 @@
                                     maxlength="500"
                                     placeholder="Explique brevemente sua motivação para proteger a Amazônia"
                                 ></textarea>
-                                <span class="error-message"></span>
                             </div>
                         </fieldset>
 
                         <!-- Termos e Condições -->
-                        <fieldset class="form-section">
+                        <fieldset>
                             <legend>
-                                <i class="fas fa-file-contract"></i>
                                 Termos e Condições
                             </legend>
 
-                            <div class="form-group">
-                                <label class="checkbox-label">
+                            <div>
                                     <input type="checkbox" id="termos" name="termos" required>
-                                    <span class="checkmark"></span>
                                     Li e aceito os <a href="#" target="_blank">termos de uso</a> e <a href="#" target="_blank">política de privacidade</a> *
                                 </label>
-                                <span class="error-message"></span>
                             </div>
 
-                            <div class="form-group">
-                                <label class="checkbox-label">
+                            <div>
+                                <label>
                                     <input type="checkbox" id="newsletter" name="newsletter">
-                                    <span class="checkmark"></span>
                                     Desejo receber informações sobre novos projetos e eventos por e-mail
                                 </label>
                             </div>
                         </fieldset>
 
-                        <div class="form-actions">
-                            <button type="button" id="limparForm" class="btn-secondary">
-                                <i class="fas fa-eraser"></i>
+                        <div>
+                            <button type="button" id="limparForm">
                                 Limpar Formulário
                             </button>
-                            <button type="submit" class="btn-primary">
-                                <i class="fas fa-paper-plane"></i>
+                            <button type="submit">
                                 Enviar Cadastro
                             </button>
                         </div>
                     </form>
                 </div>
 
-                <div class="form-info">
+                <div>
                     <h3>O que acontece após o cadastro?</h3>
-                    <div class="info-steps">
-                        <div class="step">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
+                    <div>
+                        <div>
+                            <div>
                                 <h4>Análise do Cadastro</h4>
                                 <p>Nossa equipe analisará seu perfil e interesse em conservação</p>
                             </div>
                         </div>
-                        <div class="step">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
+                        <div>
+                            <div>
                                 <h4>Entrevista</h4>
                                 <p>Conversaremos sobre suas expectativas e compromisso com a conservação</p>
                             </div>
                         </div>
-                        <div class="step">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
+                        <div>
+                            <div>
                                 <h4>Capacitação</h4>
                                 <p>Você receberá treinamento em técnicas de conservação e pesquisa</p>
                             </div>
                         </div>
-                        <div class="step">
-                            <div class="step-number">4</div>
-                            <div class="step-content">
+                        <div>
+                            <div>
                                 <h4>Início das Atividades</h4>
                                 <p>Começará a fazer parte da nossa equipe de conservação</p>
                             </div>
@@ -355,196 +325,30 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>ONG Cuidemos do Amazonas</h3>
+        <div>
+            <div>
+                <div>
+                    <h3>Cuidemos do Amazonas</h3>
                     <p>Protegendo a biodiversidade amazônica através da conservação e desenvolvimento sustentável.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    </div>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h4>Links Rápidos</h4>
                     <ul>
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="/pages/projetos.html">Projetos</a></li>
+                        <li><a href="/pages/cadastro.html">Cadastro</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div>
                     <h4>Contato</h4>
-                    <p><i class="fas fa-phone"></i> (92) 3456-7890</p>
-                    <p><i class="fas fa-envelope"></i> contato@cuidemosdoamazonas.org.br</p>
+                    <p>(92) 3456-XXXX</p>
+                    <p>contato@cuidemosdoamazonas.org.br</p>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div>
                 <p>&copy; 2024 ONG Cuidemos do Amazonas. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Input masks
-        document.addEventListener('DOMContentLoaded', function() {
-            // CPF mask
-            const cpfInput = document.getElementById('cpf');
-            cpfInput.addEventListener('input', function(e) {
-                let value = e.target.value.replace(/\D/g, '');
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-                e.target.value = value;
-            });
-
-            // Phone mask
-            const phoneInput = document.getElementById('telefone');
-            phoneInput.addEventListener('input', function(e) {
-                let value = e.target.value.replace(/\D/g, '');
-                value = value.replace(/(\d{2})(\d)/, '($1) $2');
-                value = value.replace(/(\d{4,5})(\d{4})$/, '$1-$2');
-                e.target.value = value;
-            });
-
-            // CEP mask
-            const cepInput = document.getElementById('cep');
-            cepInput.addEventListener('input', function(e) {
-                let value = e.target.value.replace(/\D/g, '');
-                value = value.replace(/(\d{5})(\d)/, '$1-$2');
-                e.target.value = value;
-            });
-
-            // Form validation
-            const form = document.getElementById('volunteerForm');
-            const clearBtn = document.getElementById('limparForm');
-
-            // Clear form
-            clearBtn.addEventListener('click', function() {
-                if (confirm('Tem certeza que deseja limpar todos os campos?')) {
-                    form.reset();
-                    clearErrors();
-                }
-            });
-
-            // Form submission
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                if (validateForm()) {
-                    // Simulate form submission
-                    alert('Cadastro enviado com sucesso! Entraremos em contato em breve.');
-                    form.reset();
-                }
-            });
-
-            // Real-time validation
-            const inputs = form.querySelectorAll('input, select, textarea');
-            inputs.forEach(input => {
-                input.addEventListener('blur', function() {
-                    validateField(this);
-                });
-                
-                input.addEventListener('input', function() {
-                    if (this.classList.contains('error')) {
-                        validateField(this);
-                    }
-                });
-            });
-
-            function validateForm() {
-                let isValid = true;
-                clearErrors();
-
-                // Required fields validation
-                const requiredFields = form.querySelectorAll('[required]');
-                requiredFields.forEach(field => {
-                    if (!validateField(field)) {
-                        isValid = false;
-                    }
-                });
-
-                // Checkbox group validation
-                const disponibilidadeCheckboxes = form.querySelectorAll('input[name="disponibilidade"]');
-                const disponibilidadeChecked = Array.from(disponibilidadeCheckboxes).some(cb => cb.checked);
-                
-                if (!disponibilidadeChecked) {
-                    showError(disponibilidadeCheckboxes[0], 'Selecione pelo menos um horário de disponibilidade');
-                    isValid = false;
-                }
-
-                return isValid;
-            }
-
-            function validateField(field) {
-                const value = field.value.trim();
-                let isValid = true;
-                let errorMessage = '';
-
-                // Required validation
-                if (field.hasAttribute('required') && !value) {
-                    errorMessage = 'Este campo é obrigatório';
-                    isValid = false;
-                }
-                // Pattern validation
-                else if (field.hasAttribute('pattern') && value && !new RegExp(field.getAttribute('pattern')).test(value)) {
-                    errorMessage = 'Formato inválido';
-                    isValid = false;
-                }
-                // Min length validation
-                else if (field.hasAttribute('minlength') && value.length < parseInt(field.getAttribute('minlength'))) {
-                    errorMessage = `Mínimo de ${field.getAttribute('minlength')} caracteres`;
-                    isValid = false;
-                }
-                // Max length validation
-                else if (field.hasAttribute('maxlength') && value.length > parseInt(field.getAttribute('maxlength'))) {
-                    errorMessage = `Máximo de ${field.getAttribute('maxlength')} caracteres`;
-                    isValid = false;
-                }
-                // Date validation
-                else if (field.type === 'date' && value) {
-                    const date = new Date(value);
-                    const minDate = new Date(field.getAttribute('min'));
-                    const maxDate = new Date(field.getAttribute('max'));
-                    
-                    if (date < minDate || date > maxDate) {
-                        errorMessage = 'Data fora do intervalo permitido';
-                        isValid = false;
-                    }
-                }
-
-                if (isValid) {
-                    clearError(field);
-                } else {
-                    showError(field, errorMessage);
-                }
-
-                return isValid;
-            }
-
-            function showError(field, message) {
-                field.classList.add('error');
-                const errorElement = field.parentNode.querySelector('.error-message');
-                if (errorElement) {
-                    errorElement.textContent = message;
-                }
-            }
-
-            function clearError(field) {
-                field.classList.remove('error');
-                const errorElement = field.parentNode.querySelector('.error-message');
-                if (errorElement) {
-                    errorElement.textContent = '';
-                }
-            }
-
-            function clearErrors() {
-                const errorFields = form.querySelectorAll('.error');
-                errorFields.forEach(field => clearError(field));
-            }
-        });
-    </script>
 </body>
 </html>
