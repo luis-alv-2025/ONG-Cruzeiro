@@ -1,154 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuidemos do Amazonas - Protegendo Nossa Floresta</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div>
-                <h1>Cuidemos do Amazonas</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="/pages/projetos.html">Projetos</a></li>
-                <li><a href="/pages/cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <i class="fas fa-leaf"></i>
+          <h1>Cuidemos do Amazonas</h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="./pages/projetos.html">Projetos</a></li>
+          <li><a href="./pages/cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <div>
-                <h2>Protegendo o Coração Verde do Planeta</h2>
-                <p>Há mais de 20 anos dedicados à preservação da Amazônia, promovendo conservação ambiental e desenvolvimento sustentável para as comunidades locais.</p>
-                <a href="projetos.html">Conheça Nossos Projetos</a>
-            </div>
-            <div>
-                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Floresta Amazônica vista aérea" loading="lazy">
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Protegendo o Coração Verde do Planeta</h2>
+          <p>
+            Há mais de 20 anos dedicados à preservação da Amazônia, promovendo
+            conservação ambiental e desenvolvimento sustentável para as
+            comunidades locais.
+          </p>
+          <a href="./pages/projetos.html" class="cta-button">Conheça Nossos Projetos</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="./images/amazonasMain.jpg"
+            alt="Floresta Amazônica vista aérea"
+            loading="lazy"
+          />
+        </div>
+      </section>
 
-        <section>
-            <div>
-                <h2>Sobre Nossa Organização</h2>
-                <div>
-                    <article>
-                        <h3>Nossa Missão</h3>
-                        <p>Proteger e preservar a biodiversidade amazônica através de ações de conservação, pesquisa científica e desenvolvimento sustentável, garantindo um futuro verde para as próximas gerações.</p>
-                    </article>
-                    <article>
-                        <h3>Nossa Visão</h3>
-                        <p>Ser reconhecida como a principal organização de conservação da Amazônia, criando um modelo de desenvolvimento sustentável que equilibre proteção ambiental e bem-estar das comunidades locais.</p>
-                    </article>
-                    <article>
-                        <h3>Nossos Valores</h3>
-                        <p>Sustentabilidade, respeito à biodiversidade, parceria com comunidades locais, transparência e inovação científica são os pilares que guiam nossa missão de proteger a Amazônia.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <section class="about">
+        <div class="container">
+          <h2>Sobre Nossa Organização</h2>
+          <div class="about-grid">
+            <article class="about-card">
+              <i class="fas fa-tree"></i>
+              <h3>Nossa Missão</h3>
+              <p>
+                Proteger e preservar a biodiversidade amazônica através de ações
+                de conservação, pesquisa científica e desenvolvimento
+                sustentável, garantindo um futuro verde para as próximas
+                gerações.
+              </p>
+            </article>
+            <article class="about-card">
+              <i class="fas fa-globe-americas"></i>
+              <h3>Nossa Visão</h3>
+              <p>
+                Ser reconhecida como a principal organização de conservação da
+                Amazônia, criando um modelo de desenvolvimento sustentável que
+                equilibre proteção ambiental e bem-estar das comunidades locais.
+              </p>
+            </article>
+            <article class="about-card">
+              <i class="fas fa-seedling"></i>
+              <h3>Nossos Valores</h3>
+              <p>
+                Sustentabilidade, respeito à biodiversidade, parceria com
+                comunidades locais, transparência e inovação científica são os
+                pilares que guiam nossa missão de proteger a Amazônia.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div>
-                <h2>Nossos Números</h2>
-                <div>
-                    <div>
-                        <h3>50.000+</h3>
-                        <p>Árvores Plantadas</p>
-                    </div>
-                    <div>
-                        <h3>2.500+</h3>
-                        <p>Hectares Protegidos</p>
-                    </div>
-                    <div>
-                        <h3>1.200+</h3>
-                        <p>Comunidades Apoiadas</p>
-                    </div>
-                    <div>
-                        <h3>300+</h3>
-                        <p>Espécies Monitoradas</p>
-                    </div>
-                </div>
+      <section class="stats">
+        <div class="container">
+          <h2>Nossos Números</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <i class="fas fa-tree"></i>
+              <h3>50.000+</h3>
+              <p>Árvores Plantadas</p>
             </div>
-        </section>
+            <div class="stat-item">
+              <i class="fas fa-map-marked-alt"></i>
+              <h3>2.500+</h3>
+              <p>Hectares Protegidos</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-users"></i>
+              <h3>1.200+</h3>
+              <p>Comunidades Apoiadas</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-leaf"></i>
+              <h3>300+</h3>
+              <p>Espécies Monitoradas</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div>
-                <h2>Entre em Contato</h2>
+      <section class="contact">
+        <div class="container">
+          <h2>Entre em Contato</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Informações de Contato</h3>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
                 <div>
-                    <div>
-                        <h3>Informações de Contato</h3>
-                        <div>
-                            <div>
-                                <h4>Endereço</h4>
-                                <p>Av. das Palmeiras, 456<br>Centro - Manaus/AM<br>CEP: 69000-000</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h4>Telefone</h4>
-                                <p>(92) 3456-XXXX</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h4>E-mail</h4>
-                                <p>contato@cuidemosdoamazonas.org.br</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h4>Horário de Funcionamento</h4>
-                                <p>Segunda a Sexta: 8h às 17h<br>Sábado: 8h às 12h</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d-60.0!3d-3.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDAnMDAuMCJTIDYwwrAwJzAwLjAiVw!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-                            width="100%" 
-                            height="300" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                  <h4>Endereço</h4>
+                  <p>
+                    Av. das Palmeiras, 456<br />Centro - Manaus/AM<br />CEP:
+                    69000-000
+                  </p>
                 </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Telefone</h4>
+                  <p>(92) 3456-7890</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>E-mail</h4>
+                  <p>contato@cuidemosdoamazonas.org.br</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Horário de Funcionamento</h4>
+                  <p>Segunda a Sexta: 8h às 17h<br />Sábado: 8h às 12h</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0!2d-60.0!3d-3.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDAnMDAuMCJTIDYwwrAwJzAwLjAiVw!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div>
-            <div>
-                <div>
-                    <h3>Cuidemos do Amazonas</h3>
-                    <p>Protegendo a biodiversidade amazônica através da conservação e desenvolvimento sustentável.</p>
-                </div>
-                <div>
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="/pages/projetos.html">Projetos</a></li>
-                        <li><a href="/pages/cadastro.html">Cadastro</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contato</h4>
-                    <p>(92) 3456-7890</p>
-                    <p>contato@cuidemosdoamazonas.org.br</p>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Cuidemos do Amazonas</h3>
+            <p>
+              Protegendo a biodiversidade amazônica através da conservação e
+              desenvolvimento sustentável.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
             </div>
-            <div>
-                <p>&copy; 2025 ONG Cruzeiro do Sul. Todos os direitos reservados.</p>
-            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="./pages/projetos.html">Projetos</a></li>
+              <li><a href="./pages/cadastro.html">Cadastro</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contato</h4>
+            <p><i class="fas fa-phone"></i> (92) 3456-7890</p>
+            <p>
+              <i class="fas fa-envelope"></i> contato@cuidemosdoamazonas.org.br
+            </p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ONG Cruzeiro do Sul. Todos os direitos reservados.</p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
